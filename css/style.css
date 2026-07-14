@@ -1,0 +1,265 @@
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+/* 네비게이션 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #ff6b6b;
+}
+
+/* Hero 섹션 */
+.hero {
+  text-align: center;
+  padding: 100px 24px;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #ee5a5a;
+}
+
+/* 추천 섹션 */
+.recommend-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.recommend-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#gift-form button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* 결과/로딩/에러 영역 */
+.result-area {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.loading {
+  margin-top: 24px;
+  text-align: center;
+  color: #888;
+}
+
+.error-message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #fff0f0;
+  color: #c92a2a;
+  border-radius: 8px;
+}
+
+/* 이용방법 섹션 */
+.howitworks {
+  padding: 80px 24px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.howitworks h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.step {
+  max-width: 200px;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* FAQ 섹션 */
+.faq {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 28px;
+}
+
+.faq-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.faq-item h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.faq-item p {
+  color: #666;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 32px;
+  background-color: #2d2d2d;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ===== 반응형: 태블릿 이하 ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ===== 반응형: 모바일 ===== */
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .recommend-section,
+  .howitworks,
+  .faq {
+    padding: 48px 16px;
+  }
+}
+
+.gift-item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.gift-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.gift-item h4 {
+  margin-bottom: 6px;
+  color: #ff6b6b;
+}
