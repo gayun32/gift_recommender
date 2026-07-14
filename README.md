@@ -131,7 +131,4 @@ Vercel 대시보드 → 프로젝트 → **Settings → Environment Variables**�
 - 태블릿 이하 (max-width: 768px)
 - 모바일 (max-width: 480px)
 
----
 
-## 📄 라이선스
-개인 학습 프로젝트로 제작되었습니다.
