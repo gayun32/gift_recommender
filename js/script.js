@@ -24,7 +24,7 @@ giftForm.addEventListener("submit", async (e) => {
 
   // 2) 타임아웃 처리용 AbortController (10초)
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 10000);
+  const timeoutId = setTimeout(() => controller.abort(), 25000);
 
   setLoading(true);
   hideError();
